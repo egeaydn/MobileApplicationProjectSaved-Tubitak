@@ -41,7 +41,7 @@ export default function Login({navigation}) {
     </View>
     <View>
      <TouchableOpacity style={styles.forgot}>
-        <Text style={styles.forgetText} onPress={()=>navigation.navigate("Disconnected")}>Şifremi unuttum</Text>
+        <Text style={styles.forgetText} onPress={()=>navigation.navigate("Discconnected")}>Şifremi unuttum</Text>
       </TouchableOpacity>
 
               <Text style={styles.or}>Yada</Text>
@@ -52,6 +52,9 @@ export default function Login({navigation}) {
         <Text style={styles.createText} onPress={()=>navigation.navigate("Signin")}>Öğretmen Girişi</Text>
       </TouchableOpacity>
     </View>
+     <View style={styles.copyrightcontainer}>
+      <Text style={styles.copyright}>© 2024 A. Yazar. Tüm hakları saklıdır.</Text>
+      </View>
     </View>
 
   );
@@ -66,7 +69,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 30,
-    fontWeight: '900',
+    fontWeight: '700',
     color: '#FFC94A',
     marginBottom: 70,
     textAlign:"center",
@@ -135,7 +138,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '100%',
      paddingTop:"20px",
-          padding:10
+          padding:20
   },
   create:{
     alignItems:"center",
@@ -152,5 +155,18 @@ const styles = StyleSheet.create({
     color:"white",
     fontWeight:"700",
     paddingHorizontal: 20,
+  },
+ copyright :{
+    textAlign:"center",
+    fontWeight:"500",
+    fontSize:"16px",
+    color:"#fff",
+    marginTop:55
+  },
+  copyrightcontainer:{
+  flexDirection: 'row',
+    justifyContent: 'center',
+    width: '100%',
+    padding:10
   },
 });
