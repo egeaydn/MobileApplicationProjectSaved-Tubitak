@@ -52,6 +52,9 @@ export default function Login({navigation}) {
         <Text style={styles.createText} onPress={()=>navigation.navigate("Login")}>Öğrenci Girişi</Text>
       </TouchableOpacity>
     </View>
+    <View style={styles.copyrightcontainer}>
+      <Text style={styles.copyright}>© 2024 A. Yazar. Tüm hakları saklıdır.</Text>
+      </View>
     </View>
 
   );
@@ -66,7 +69,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 30,
-    fontWeight: '900',
+    fontWeight: '700',
     color: '#FFC94A',
     marginBottom: 70,
     textAlign:"center",
@@ -125,17 +128,17 @@ const styles = StyleSheet.create({
   },
   hr:{
      borderBottomColor: '#fff',
-    borderBottomWidth: 1,
-     marginVertical: 5,
-          padding:4,
-          fontWeight: '900',
+      borderBottomWidth: 1,
+      marginVertical: 5,
+      padding:4,
+     fontWeight: '900',
   },
   createbutton:{
       flexDirection: 'row',
     justifyContent: 'center',
     width: '100%',
      paddingTop:"20px",
-          padding:10
+          padding:20
   },
   create:{
     alignItems:"center",
@@ -152,5 +155,18 @@ const styles = StyleSheet.create({
     color:"white",
     fontWeight:"700",
     paddingHorizontal: 20,
+  },
+ copyright :{
+    textAlign:"center",
+    fontWeight:"500",
+    fontSize:"16px",
+    color:"#fff",
+    marginTop:55
+  },
+  copyrightcontainer:{
+  flexDirection: 'row',
+    justifyContent: 'center',
+    width: '100%',
+    padding:10
   },
 });
