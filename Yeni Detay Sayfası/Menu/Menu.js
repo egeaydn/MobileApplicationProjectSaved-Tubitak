@@ -47,10 +47,10 @@ export default function Menu({ navigation }) {
             <Ionicons name="school-outline" size={40} color={theme.colors.text} />
           </View>
           <Text style={[styles.schoolName, { color: theme.colors.text }]}>
-            Okul Adı
+            GAREMTAL
           </Text>
           <Text style={[styles.subtitle, { color: theme.colors.textSecondary }]}>
-            Mobil Uygulama
+            General Ali Rıza Ersin Mes. Tek. Anadolu Lisesi
           </Text>
         </View>
       </Animatable.View>
